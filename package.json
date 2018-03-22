@@ -1,0 +1,49 @@
+{
+  "name": "spotify-wrapper",
+  "version": "1.0.0",
+  "description": "Jss and Tdd crash course",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint && npm run test:coverage",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "functions": 80,
+    "lines": 80,
+    "check-coverage": true,
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreAffonso/spotify-wrapper.git"
+  },
+  "keywords": ["JS", "TDD"],
+  "author": "André Affonso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreAffonso/spotify-wrapper/issues"
+  },
+  "homepage": "https://github.com/AndreAffonso/spotify-wrapper#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
+    "mocha": "^5.0.4",
+    "nyc": "^11.6.0",
+    "prettier": "^1.11.1"
+  }
+}
