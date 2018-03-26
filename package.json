@@ -20,14 +20,22 @@
     "functions": 80,
     "lines": 80,
     "check-coverage": true,
-    "reporter": ["text", "html"],
-    "exclude": ["tests/**"]
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndreAffonso/spotify-wrapper.git"
   },
-  "keywords": ["JS", "TDD"],
+  "keywords": [
+    "JS",
+    "TDD"
+  ],
   "author": "André Affonso",
   "license": "MIT",
   "bugs": {
@@ -40,6 +48,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
     "eslint": "^4.19.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
