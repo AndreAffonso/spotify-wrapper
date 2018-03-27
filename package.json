@@ -1,6 +1,6 @@
 {
   "name": "spotify-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A wrapper to work with the Spotify Web API.",
   "main": "lib/index.js",
   "scripts": {
@@ -22,22 +22,14 @@
     "functions": 80,
     "lines": 80,
     "check-coverage": true,
-    "reporter": [
-      "text",
-      "html"
-    ],
-    "exclude": [
-      "tests/**"
-    ]
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndreAffonso/spotify-wrapper.git"
   },
-  "keywords": [
-    "JS",
-    "TDD"
-  ],
+  "keywords": ["JS", "TDD"],
   "author": "André Affonso",
   "license": "MIT",
   "bugs": {
